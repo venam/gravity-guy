@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<!-- <html manifest="myGame.appcache">-->
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=750, height=550, user-scalable=no"/>  
+		<title>Gravity Guy</title>
+		<script src="AudioSprite.js"></script>
+		<script src="Media.js"></script>
+		<script src="Box2D.js"></script>
+		<script src="State.js"></script>
+		<script src="MainMenu.js"></script>
+		<script src="Tips.js"></script>
+		<script src="Sound.js"></script>
+		<script src="SaveLoad.js"></script>
+		<script src="GravityArrows.js"></script>
+		<script src="WarpZone.js"></script>
+		<script src="GettingThere.js"></script>
+		<script src="AlienAttack.js"></script>
+		<script src="Entity.js"></script>
+		<script src="CircleEntity.js"></script>
+		<script src="RectangleEntity.js"></script>
+		<script src="PolygonEntity.js"></script>
+		<script src="platform.js"></script>
+		<script src="Mine.js"></script>
+		<script src="Bomb.js"></script>
+		<script src="bTest.js"></script>
+		<script src="spaceShip.js"></script>
+		<script src="Guy.js"></script>
+		<script src="AlienPlatform.js"></script>
+		<script src="CircleSpikes.js"></script>
+		<script src="RectangleSpikes.js"></script>
+		<script src="GreenAlien.js"></script>
+		<script src="RedAlien.js"></script>
+		<script src="Level.js"></script>
+		<script src="AlienLevel.js"></script>
+		<script src="SpaceShipLevels.js"></script>
+		<script src="LevelFactory.js"></script>
+		<script src="WinState.js"></script>
+		<script src="TipsFactory.js"></script>
+		<script>
+			      document.addEventListener('touchmove', function(e) { e.preventDefault(); }, false);
+		</script>
+		<style>
+		@font-face {
+			font-family: "Computerfont";
+			src: url('Computerfont.ttf');
+		}
+
+		body {
+			-webkit-transform: translateZ(0);
+			margin: 0px auto;
+			background-color: #FFFFFF;
+		}
+		canvas {
+			image-rendering: crisp-edges;
+			image-rendering: -moz-crisp-edges;
+			image-rendering: -webkit-optimize-contrast;
+			-ms-interpolation-mode: nearest-neighbor;
+		}
+		#wrapper {
+			margin: 0px auto;
+			text-align:center;
+		}
+		#wrapper div{
+			padding: 1px;
+		}
+		#c0 {
+			border: 2px inset #121212;
+			background-color:#000000;
+		}
+		</style>
+		</head>
+	<body>
+		<script src="pointer.min.js"></script>
+		<div id=wrapper>
+			<!--
+			<audio id="audio">
+				<source src="sprite.ogg" type="audio/ogg">
+				<source src="sprite.mp3" type="audio/mpeg">
+				<source src="boing.wav" type="audio/wav">
+			</audio>
+			<audio id="bump">
+				<source src="bump.ogg" type="audio/ogg">
+				<source src="bump.mp3" type="audio/mpeg">
+				<source src="bump.wav" type="audio/wav">
+			</audio>
+			-->
+			<audio id="zik">
+				<source src="bleep.ogg.ogg" type="audio/ogg">
+				<source src="bleep.ogg.mp3" type="audio/mpeg">
+				<source src="bleep.wav" type="audio/wav">
+			</audio>
+			<div>
+				<canvas id="c0" width="600" height="400">
+					It's 2013, get a next gen browser, <a href="getfirefox.com">firefox</a> for example, otherwise you won't be able to play this game correctly.
+				</canvas>
+			</div>
+		</div>
+	</body>
+	<script src="MainGame.js"></script>
+</html>
+
